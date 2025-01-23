@@ -1,5 +1,6 @@
-OS.img
-OS.img.bak
-OS.img.tags
-*.o
-*.sys
+*
+
+!*.c
+!*.h
+!*.s
+!makefile

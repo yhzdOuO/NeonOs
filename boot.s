@@ -9,10 +9,10 @@ _start:
 print:	
 	movb 	(%si), %al
 	cmpb	$0, %al
-	je	end
-	int	$0x10
+	je		end
+	int		$0x10
 	incw	%si
-	jmp	print
+	jmp		print
 
 end:	
 	hlt
