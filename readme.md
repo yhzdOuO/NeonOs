@@ -1,6 +1,6 @@
 # NeonOS
 
-This is readme file of NeonOs
+Hello NeonOS!
 
 git
 

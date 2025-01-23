@@ -1,15 +1,15 @@
-build: boot.sys NeonOs.img
-	tool/copy/textcopy boot.sys NeonOs.img
+NeonOS.img: boot.sys
+	tool/copy/textcopy boot.sys NeonOS.img
 
 boot.sys: boot.s
 	as -o boot.o boot.s
 	ld -Ttext 0x7c00 -o boot.sys boot.o
 
-NeonOs.img:
-	qemu-img create -f raw NeonOs.img 16M
+create: 
+	qemu-img create -f raw NeonOS.img 1M
 
-run: NeonOs.img
-	qemu-system-x86_64 -drive file=NeonOs.img,format=raw
+run:
+	qemu-system-x86_64 -drive file=NeonOS.img,format=raw
 
 clean:
-	rm boot.o
+	rm boot.o boot.sys
