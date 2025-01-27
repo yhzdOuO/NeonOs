@@ -1,8 +1,9 @@
 *.o
 *.bin
-NeonOS.img
-NeonOS.img.tag
-tool/copy/*.o
-tool/copy/textcopy
-tool/copy/objcopy
-old
+/NeonOS.img
+/NeonOS.img.tags
+/tool/copy/*.o
+/tool/copy/textcopy
+/tool/copy/objcopy
+/build
+/old
