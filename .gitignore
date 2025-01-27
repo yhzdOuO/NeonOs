@@ -1,6 +1,7 @@
-*
-
-!*.c
-!*.h
-!*.s
-!makefile
+*.o
+NeonOS.img
+NeonOS.img.tag
+tool/copy/*.o
+tool/copy/textcopy
+tool/copy/objcopy
+old
