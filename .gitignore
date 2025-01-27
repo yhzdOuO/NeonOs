@@ -1,4 +1,5 @@
 *.o
+*.bin
 NeonOS.img
 NeonOS.img.tag
 tool/copy/*.o
